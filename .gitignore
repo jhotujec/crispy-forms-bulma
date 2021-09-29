@@ -5,3 +5,5 @@
 build/
 dist/
 django_crispy_bulma.egg-info/
+.tox
+*.bat

@@ -1,3 +1,5 @@
 include LICENSE
 recursive-include django_crispy_bulma/templates *
 recursive-include docs *
+include requirements.txt
+include dev_requirements.txt
