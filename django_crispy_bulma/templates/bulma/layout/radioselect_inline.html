@@ -1,0 +1,19 @@
+{% if field.is_hidden %}
+    {{ field }}
+{% else %}
+    <div id="div_{{ field.auto_id }}"
+         class="field{% if wrapper_class %} {{ wrapper_class }}{% endif %}{% if field.css_classes %} {{ field.css_classes }}{% endif %}">
+
+        {% if field.label %}
+            <label for="{{ field.auto_id }}" class="label
+                    {{ label_class }}{% if field.field.required %} requiredField{% endif %}">
+                {{ field.label|safe }}{% if field.field.required %}
+                    <span class="asteriskField">*</span>{% endif %}
+            </label>
+        {% endif %}
+
+        <div class="control">
+            {% include 'bulma/layout/radioselect.html' %}
+        </div>
+    </div>
+{% endif %}

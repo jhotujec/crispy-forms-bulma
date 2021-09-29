@@ -1,4 +1,9 @@
 *.pyc
 .idea
-/dist
-/crispy_forms_bulma.egg-info
+.venv
+
+build/
+dist/
+django_crispy_bulma.egg-info/
+.tox
+*.bat
