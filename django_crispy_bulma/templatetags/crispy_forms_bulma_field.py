@@ -138,7 +138,7 @@ class CrispyBulmaFieldNode(template.Node):
                 else:
                     widget.attrs[attribute_name] = template.Variable(attribute).resolve(context)
 
-        return field
+        return str(field)
 
 
 @register.tag(name="crispy_field")
