@@ -6,7 +6,7 @@
 #
 attrs==21.2.0
     # via flake8-bugbear
-backports.entry-points-selectable==1.1.0
+backports-entry-points-selectable==1.1.0
     # via virtualenv
 certifi==2021.5.30
     # via requests
@@ -71,7 +71,7 @@ pygithub==1.55
     # via -r dev_requirements.in
 pygments==2.10.0
     # via pdoc
-pyjwt==2.1.0
+pyjwt==2.4.0
     # via pygithub
 pynacl==1.4.0
     # via pygithub
